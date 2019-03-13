@@ -1,129 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <ImageView
-            android:src="@drawable/naancurry"
-            android:layout_height="200dp"
             android:layout_width="match_parent"
-            android:scaleType="centerCrop"/>
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/naancurry"
+            android:contentDescription="Main Image"/>
 
         <LinearLayout
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:background="#3F51B5"
-            android:padding="16dp" >
+            android:orientation="vertical"
+            android:padding="16dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Twelve Tables"
-                android:textSize="26sp"
+                android:text="@string/twelve_tables"
                 android:textColor="@android:color/white"
-                />
+                android:textSize="26sp" />
+
             <LinearLayout
-                android:orientation="horizontal"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content">
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4.8"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/white"
                     android:layout_marginRight="8dp"
-                    />
+                    android:text="@string/rating"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
                 <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:numStars="5"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:rating="4.5"/>
+                    android:rating="4.5" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="315 Reviews"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/white"
                     android:layout_marginLeft="16dp"
-                    />
+                    android:text="@string/reviews"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Authentic Indian Restaurant"
                 android:textColor="@android:color/white"
-                android:textSize="18dp"/>
+                android:textSize="18sp" />
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enjoy the taste of authentic Indian food inspired by traditional clay oven cooking."
             android:padding="16dp"
+            android:text="@string/description"
             android:textColor="@android:color/black"
-            android:textSize="16dp"/>
-        <View
-            style = "@style/LineView"/>
-        <LinearLayout
-            style="@style/InnerLinearLayout">
+            android:textSize="16sp" />
+
+        <View style="@style/LineView" />
+
+        <LinearLayout style="@style/InnerLinearLayout">
+
             <ImageView
                 style="@style/InnerImage"
                 android:src="@drawable/ic_room_black_24dp" />
+
             <TextView
                 style="@style/InnerText"
-                android:text="301 SW Morrison St,Portland, OR 97204" />
+                android:text="@string/address" />
         </LinearLayout>
-        <View
-            style = "@style/LineView"/>
-        <LinearLayout
-            style="@style/InnerLinearLayout">
+
+        <View style="@style/LineView" />
+
+        <LinearLayout style="@style/InnerLinearLayout">
+
             <ImageView
                 style="@style/InnerImage"
                 android:src="@drawable/ic_schedule_black_24dp" />
+
             <TextView
                 style="@style/InnerText"
-                android:text="Open: Closes 10:00PM" />
+                android:text="@string/hours" />
         </LinearLayout>
-        <View
-            style = "@style/LineView"/>
-        <LinearLayout
-            style="@style/InnerLinearLayout">
+
+        <View style="@style/LineView" />
+
+        <LinearLayout style="@style/InnerLinearLayout">
+
             <ImageView
                 style="@style/InnerImage"
                 android:src="@drawable/ic_call_black_24dp" />
+
             <TextView
                 style="@style/InnerText"
-                android:text="(503)222-9866"/>
+                android:text="@string/phone" />
         </LinearLayout>
-        <View
-            style = "@style/LineView"/>
-        <LinearLayout
-            style="@style/InnerLinearLayout">
+
+        <View style="@style/LineView" />
+
+        <LinearLayout style="@style/InnerLinearLayout">
+
             <ImageView
                 style="@style/InnerImage"
                 android:src="@drawable/ic_local_dining_black_24dp" />
+
             <TextView
                 style="@style/InnerText"
-                android:text="Menu" />
+                android:text="@string/menu" />
         </LinearLayout>
-        <View
-            style = "@style/LineView"/>
-        <LinearLayout
-            style="@style/InnerLinearLayout">
+
+        <View style="@style/LineView" />
+
+        <LinearLayout style="@style/InnerLinearLayout">
+
             <ImageView
                 style="@style/InnerImage"
-                android:src="@drawable/ic_web_black_24dp"/>
+                android:src="@drawable/ic_web_black_24dp" />
+
             <TextView
                 style="@style/InnerText"
-                android:text="twelvetables.com"/>
+                android:text="@string/website" />
         </LinearLayout>
 
     </LinearLayout>

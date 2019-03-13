@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">12Tables</string>
+    <string name="twelve_tables">Twelve Tables</string>
+    <string name="rating">4.8</string>
+    <string name="reviews">315 Reviews</string>
+    <string name="description">Enjoy the taste of authentic Indian food inspired by traditional clay oven cooking.</string>
+    <string name="address">301 SW Morrison St,Portland, OR 97204</string>
+    <string name="hours">Open: Closes 10:00PM</string>
+    <string name="phone">(503)222-9866</string>
+    <string name="menu">Menu</string>
+    <string name="website">welvetables.com</string>
+
 </resources>
